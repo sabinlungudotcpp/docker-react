@@ -6,4 +6,4 @@ before_install:
   - docker build -t sabin2000/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run sabin2000/docker-react set CI=true npm run test -- --coverage
+  - docker run sabin2000/docker-react CI=true npm run test -- --coverage
